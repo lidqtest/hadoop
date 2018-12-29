@@ -1,0 +1,11 @@
+hive\HiveConnect.class
+hadoop\wordcount\WordCountReducer.class
+udf\HashMd5.class
+udf\BiggerCont$GenericEvaluate$CountAgg.class
+hadoop\mytest\ForTest.class
+udf\BiggerCont$GenericEvaluate.class
+hadoop\wordcount\WordCountMapper.class
+udf\UdfTest.class
+udf\StringToList.class
+udf\BiggerCont.class
+hadoop\wordcount\WordCount.class

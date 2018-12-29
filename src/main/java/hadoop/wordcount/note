@@ -1,0 +1,31 @@
+1、    在/home路径下，新建words.txt文档，文档内容如下：
+hello tom
+hello jerry
+hello kitty
+hello world
+hello tom
+ 
+2、    上传到hdfs文件服务器/hadoop目录下：
+执行命令：hadoop fs -put /home/words.txt /hadoop/words.txt
+执行命令：hadoop fs -cat /hadoop/words.txt
+hadoop fs -ls
+hadoop fs -put /home/dcadmin/my/words.txt input/words.txt
+hadoop fs -cat input/words.txt
+2.3 生成JAR包
+1、    选择hdfs项目->右击菜单->Export…，在弹出的提示框中选择Java下的JAR file
+2、    设置导出jar名称和路径，选择Next>:
+3、    设置程序的入口，设置完成后，点击Finish：
+
+2.4 执行JAR运行结果
+ 
+1、    在开Xft软件，将D:盘的wc.jar上传到Linux/home路径下：
+2、    执行命令
+切换目录命令：cd /home/             
+执行JAR包命令：hadoop jar wc.jar
+ 
+3、    查看执行结果
+执行命令：hadoop fs -ls /hadoop/wordsResult
+执行命令：hadoop fs -cat /hadoop/wordsResult/part-r-00000
+
+hadoop fs -ls input/wordsResult
+hadoop fs -cat  input/wordsResult/part-r-00000
