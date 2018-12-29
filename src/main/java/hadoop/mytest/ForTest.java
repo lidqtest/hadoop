@@ -9,6 +9,6 @@ public class ForTest {
         {
                 System.out.println(i);
         }
-      System.out.println("完毕");
+      System.out.println("完毕1");
     }
 }
