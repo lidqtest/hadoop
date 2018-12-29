@@ -33,6 +33,7 @@ public class WordCount {
         FileOutputFormat.setOutputPath(job, new Path(args[1]));
         // 执行提交job方法，直到完成，参数true打印进度和详情  
         //job.waitForCompletion(true);  
-        System.out.println("Finished");  
+        System.out.println("Finished");
+        System.out.println("测试完成");  
     }  
 }  
